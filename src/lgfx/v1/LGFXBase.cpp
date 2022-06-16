@@ -2985,6 +2985,7 @@ namespace lgfx
 
   void* LGFXBase::createPng(size_t* datalen, int32_t x, int32_t y, int32_t w, int32_t h)
   {
+    /*
     if (_adjust_abs(x, w)||_adjust_abs(y, h)) return nullptr;
     if (x < 0) { w += x; x = 0; }
     if (w > width() - x)  w = width()  - x;
@@ -3002,6 +3003,8 @@ namespace lgfx
     heap_free(rgbBuffer);
 
     return res;
+    */
+   return nullptr;
   }
 
 //----------------------------------------------------------------------------
